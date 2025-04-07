@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;;
+}
+
+:root{
+    --primary-color: #27CCBC;
+    --secondary-color: #BFF8E9;
+    --third-color: #F4F4F2;
+    --primary-text-color: #FFFAFA;
+    --secondary-text-color: #22CCBD;
+    --bold:700;
+    --semi-bold:600;
+    --secondary-text: "Montserrat", sans-serif;;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--third-color);
+}
+
+/* Navbar  */
+.main-nav{  
+    background-color: var(--primary-color);
+}
+
+.navbar-brand img{
+    width: 3.5rem;
+    height: 100%;
+    border-radius: 50%;
+    margin-left: 4rem;
+}
+
+.nav-link{
+    margin-right: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 1.5rem;
+    color: var(--third-color);
+    font-size: 1.2rem;
+    font-weight: var(--semi-bold);
+}
+
+.nav-link:hover,.nav-link:focus{
+    color: var(--primary-color) !important;
+    background-color: var(--third-color);
+    box-shadow: inset 6px 6px 8px var(--secondary-color), inset -6px -6px 8px var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* For All section  */
+.section{
+    padding: 120px 0px !important;
+}
+
+/* For Home section  */
+
+/* typing animation */
+.tag{
+    color: #121212;
+    font-size: 2.5rem;
+    font-weight: var(--bold);
+    padding: 0;
+    margin: 0;
+    letter-spacing: 3px;
+}
+.tag span{
+    font: var(--h2-font-size) !important;
+   font-family: var(--primary-font); 
+   color: var(--primary-color) !important;
+}
+
+/* Animation styles */
+#typing-animation {
+    position: relative;
+    font-weight: bold;
+    color: #FFFFFF;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+ .hero-btn1,.hero-btn2{
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: var(--semi-bold);
+    transition: all 0.3s ease-in-out; 
+}
+
+.hero-btn1:hover,.hero-btn1:focus{
+    background-color: var(--secondary-color);
+    color: var(--primary-color) !important;
+    transition: all 0.5s ease-in-out;
+}
+.hero-btn2{
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+.hero-btn2:hover,.hero-btn2:focus{
+    color: var(--third-color);
+    background-color: var(--primary-color) !important;
+    transition: all 0.5s ease-in-out;
+}
+
+/* For hero  */
+.img-fluid{
+    border-radius: 56% 44% 91% 9% / 44% 46% 54% 56%  ;
+}

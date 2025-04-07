@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akram Agency</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Css  -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="200">
+    <!-- Navbar -->
+    <nav class="navbar main-nav navbar-expand-lg sticky-top" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo.jpeg" alt="logo"">
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              M N Agency
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active px-4" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" aria-current="page" href="#"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" aria-current="page" href="#"
+                  >Popular</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" aria-current="page" href="#"
+                  >About us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" aria-current="page" href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <div class="container">
+      <div class="row home mt-4" id="home">
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+          <span class="text-uppercase tag">Welcome to <br> <span id="typing-animation"></span></span>
+          <p class="mt-4">
+            Welcome to M N Agency, your partner in Social Live Streaming. We
+            provide Application Hosting Agent services for Live Broadcasting,
+            Entertainment, and Influencer Marketing. We help Media companies and
+            Brands champion their messages through Promotion on live streaming
+            platforms.
+          </p>
+          <div class="row justify-content-space-between">
+            <a href="#contact" class="btn mt-4 hero-btn1 col-md-5 mx-2">Contact Us</a>
+            <a href="#contact" class="btn mt-4 hero-btn2 col-md-5 mx-2">Read more!</a>
+          </div>
+          
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+          <img src="./assets/hero.png" alt="Hero Image" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
